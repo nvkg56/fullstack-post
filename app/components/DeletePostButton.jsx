@@ -12,8 +12,7 @@ export default function DeletePostButton({ postid }) {
         method: "DELETE",
       });
       router.refresh();
-      // console.log(postid);
-      // console.log(typeof postid);
+      console.log(`Success Deleted Postid: ${postid}`);
     } catch (e) {
       console.error(e);
     }
