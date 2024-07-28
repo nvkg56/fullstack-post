@@ -1,10 +1,15 @@
-import Image from "next/image";
+import Link from "next/link";
+import ShowFeed from "@/app/components/ShowFeed";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1>Welcome to my fisrt app</h1>
-      <p>This is my first app</p>
+      <Link href={"./add-post"}>
+        <h1>POST NEW</h1>
+      </Link>
+      <div>
+        <ShowFeed />
+      </div>
     </main>
   );
 }
